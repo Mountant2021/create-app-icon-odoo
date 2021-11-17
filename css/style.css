@@ -1,0 +1,121 @@
+/* #region GLOBAL*/
+@font-face {
+  font-family: "Bungee";
+  src: url("../fonts/Bungee-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvertaRegular";
+  src: url("../fonts/Averta-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvertaBold";
+  src: url("../fonts/Averta-Bold.otf") format("truetype");
+}
+html,
+body {
+  color: #000;
+  font-family: "AvertaRegular", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ececec;
+}
+
+body * {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: unset;
+  display: unset;
+  font-family: unset;
+  font-size: unset;
+  font-weight: unset;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #2a2a2a;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: #183885;
+  outline: none;
+  -webkit-transition: all 100ms ease 0s;
+  -moz-transition: all 100ms ease 0s;
+  -o-transition: all 100ms ease 0s;
+  transition: all 100ms ease 0s;
+}
+figure {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.container-fuild {
+  background: rgb(77, 0, 73);
+  background: linear-gradient(
+    90deg,
+    rgba(77, 0, 73, 1) 0%,
+    rgba(39, 1, 35, 1) 14%,
+    rgba(121, 9, 74, 1) 76%,
+    rgba(148, 78, 32, 1) 100%
+  );
+  height: 100vh;
+  width: 100vw;
+}
+/*#endregion */
+
+/* #region PRIMARY*/
+.m-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.box-icon {
+  width: 80%;
+  height: 80vh;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 30px auto;
+  border-radius: 20px;
+}
+.box-image {
+  width: 300px;
+  height: 300px;
+  background: red;
+  margin: 30px auto;
+  border-radius: 20px;
+}
+.preview-text {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+.box-input {
+  margin: auto;
+  padding: 20px;
+}
+.box-input input {
+  width: 100%;
+  margin: 7px 0;
+}
+.class-icon {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff6e;
+}
+/*#endregion */
