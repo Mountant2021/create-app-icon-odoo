@@ -109,13 +109,58 @@ p {
   margin: auto;
   padding: 20px;
 }
+.box-input p {
+  color: #fff;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.box-input-1,
+.box-input-2 {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 70px;
+  margin: 58px 0;
+}
 .box-input input {
   width: 100%;
   margin: 7px 0;
+  color: #fff;
+  font-style: italic;
+  font-size: 14px;
+}
+.box-input-2 input {
+  padding: 0;
+  background: none;
+  border: none;
 }
 .class-icon {
   background: none;
   border: none;
   border-bottom: 1px solid #ffffff6e;
+}
+.select-shadow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.select-shadow div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.select-shadow input {
+  text-align: left;
+}
+.box-image i.fa-search {
+  margin: auto;
+  display: block;
+  text-align: center;
+  height: 300px;
+  line-height: 300px;
+  font-size: 120px;
+  color: #fff;
+}
+.select-shadow span {
+  color: #fff;
+  padding-top: 5px;
 }
 /*#endregion */

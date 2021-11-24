@@ -18,16 +18,39 @@
         <div class="container-fuild">
             <section class="content m-grid">
                 <div class="box-input">
-                    <input class="class-icon" type="text" placeholder="tag">
-                    <input class="bg-icon" type="color" id="bg" name="bg" value="#e66465">
-                    <div class="select-shadow">
-                        <input checked="checked" name="shadow" type="radio" value="left" />
-                        <input name="shadow" type="radio" value="right" />
+                    <div class="box-input-1 m-grid">
+                        <div>
+                            <p>Icon</p>
+                            <input class="class-icon" type="text" placeholder="tag">
+                        </div>
+                        <div>
+                            <p>Shadow</p>
+                            <div class="select-shadow">
+                                <div>
+                                    <input checked="checked" name="shadow" type="radio" value="left" />
+                                    <span>Left</span>
+                                </div>
+                                <div>
+                                    <input name="shadow" type="radio" value="right" />
+                                    <span>Right</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-input-2 m-grid">
+                        <div>
+                            <p>Color Icon</p>
+                            <input class="icon" type="color" id="icon" name="icon" value="#fff">
+                        </div>
+                        <div>
+                            <p>Background</p>
+                            <input class="bg-icon" type="color" id="bg" name="bg" value="#e66465">
+                        </div>
                     </div>
                 </div>
                 <div class="box-icon">
                     <div class="box-image">
-                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <i id="content-icon" class="fa fa-search" aria-hidden="true"></i>
                     </div>
                     <p class="preview-text">Preview Icon</p>
                 </div>
@@ -39,5 +62,21 @@
 <script src="lib/owl-carousel/owl.carousel.min.js"></script>
 <script src="lib/wowjs/wow.min.js"></script>
 <script src="lib/fancybox/jquery.fancybox.min.js"></script>
+<script>
+    const input_bg = document.getElementById('bg');
+    const input_icon = document.getElementById('icon');
+
+    input_bg.addEventListener('change', updateBackGround);
+    input_icon.addEventListener('change', updateIcon);
+
+    function updateBackGround(e) {
+        document.getElementsByClassName('box-image')[0].style.background = e.target.value;
+    }
+
+    function updateIcon(e) {
+        document.getElementById('content-icon').style.color = e.target.value;
+    }
+
+</script>
 
 </html>
